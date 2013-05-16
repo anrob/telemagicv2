@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'kaminari'
 gem 'web-app-theme'
+gem 'airbrake'
 
 
 
