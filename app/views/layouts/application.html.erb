@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Telemagic V2</title>
- <%= stylesheet_link_tag "application", :media => "all" %>
- <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag :application %>
+  <%= javascript_include_tag :application %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -18,7 +18,10 @@
         </ul>
       </div>
       <div id="main-navigation">
-        <ul class="wat-cf"></ul>
+        <ul class="wat-cf">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Clients", clients_path %></li>
+        </ul>
       </div>
     </div>
     <div id="wrapper" class="wat-cf">
@@ -33,7 +36,7 @@
         <%= yield %>
         <div id="footer">
           <div class="block">
-            <p>Copyright &copy; <%= Time.now.year %> Telemagic V2 Fresh Designs</p>
+            <p>Copyright &copy; <%= Time.now.year %> Telemagic V2.</p>
           </div>
         </div>
       </div>

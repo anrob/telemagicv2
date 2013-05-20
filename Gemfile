@@ -10,6 +10,7 @@ gem 'devise'
 gem 'kaminari'
 gem 'web-app-theme'
 gem 'airbrake'
+gem 'thin'
 
 
 

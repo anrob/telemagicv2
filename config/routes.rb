@@ -1,4 +1,9 @@
 Telemagic::Application.routes.draw do
+  resources :clients
+
+
+  get "home/index"
+
   root :to => "home#index"
 
 
